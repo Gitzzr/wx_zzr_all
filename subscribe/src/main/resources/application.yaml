@@ -1,8 +1,8 @@
 # 配置MySQL数据库的连接参数
 spring:
    datasource:
-      url: jdbc:mysql://127.0.0.1:3306/kemao_1?useSSL=false&serverTimezone=CST&allowPublicKeyRetrieval=true
-      username: zzr_1
+      url: jdbc:mysql://127.0.0.1:3306/zzr_database?useSSL=false&serverTimezone=CST&allowPublicKeyRetrieval=true
+      username: zzr
       password: 1234
    jpa:
 # 自动生产DDL语句（数据定义语言），用于实现表结构自动创建

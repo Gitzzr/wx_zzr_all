@@ -1,0 +1,41 @@
+.book {
+	width: 100%;
+	display: table;
+	border-bottom: 1px solid #aaa;
+}
+
+.book .col-1, .book .col-10 {
+	margin-left: 0px;
+	margin-right: 0px;
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+}
+
+.book .col-1 {
+	width: 8%;
+}
+
+.book .col-10 {
+	width: 80%;
+}
+
+.book .image {
+	height: 50px;
+}
+
+.book .name:hover {
+	background-color: rgba(200, 200, 200, 0.5);
+}
+
+.book .button {
+	cursor: pointer;
+	padding: 0px 20px;
+	border: 1px solid #aaa;
+	background-color: #aaa;
+	border-radius: 5px;
+}
+
+.book .button:hover {
+	background-color: #fff;
+}
