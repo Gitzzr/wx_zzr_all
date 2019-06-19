@@ -40,7 +40,7 @@
 			</div>
 			<span class="col-10 name">${book.name }</span>
 			<span class="col-1" style="text-align: right;">
-				<span class="button">+</span>
+				<a href="/zzr_1/library/debit?id=${book.id }" class="button">+</a>
 			</span>
 		</div>
 	</c:forEach>
