@@ -4,7 +4,7 @@ import com.example.commons.domain.User;
 import com.example.commons.domain.event.EventInMessage;
 import com.example.commons.processors.EventMessageProcessor;
 import com.example.commons.repository.UserRepository;
-import com.example.weixin.service.WeixinProxy;
+import com.example.commons.service.WeixinProxy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
