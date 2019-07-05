@@ -2,15 +2,16 @@ package com.example.weixin.library.service.impl;
 
 import java.util.LinkedList;
 
-import com.example.weixin.library.domain.Book;
-import com.example.weixin.library.domain.DebitList;
-import com.example.weixin.library.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import com.example.weixin.library.domain.Book;
+import com.example.weixin.library.domain.DebitList;
+import com.example.weixin.library.service.LibraryService;
 
 @Service
 public class LibraryServiceImpl implements LibraryService {
@@ -59,31 +60,6 @@ public class LibraryServiceImpl implements LibraryService {
 			this.bookRepository.findById(id)
 					// 3.把图书加入借阅列表。
 					.ifPresent(list.getBooks()::add);
-
-			// 这种是命令式编程
-//			Book book = this.bookRepository.findById(id)
-//					// 如果Book不存在，返回null
-//					.orElse(null);
-//			if (book != null) {
-//				list.getBooks().add(book);
-//			}
-
-			// Lambda表达式的演进语句
-//			this.bookRepository.findById(id)//
-//					.ifPresent(new Consumer<Book>() {
-//						@Override
-//						public void accept(Book book) {
-//							list.getBooks().add(book);
-//						}
-//					});
-
-//			this.bookRepository.findById(id)//
-//					.ifPresent((Book book) -> {
-//						list.getBooks().add(book);
-//					});
-
-//			this.bookRepository.findById(id)//
-//					.ifPresent(book -> list.getBooks().add(book));
 		}
 	}
 
@@ -101,17 +77,6 @@ public class LibraryServiceImpl implements LibraryService {
 				// 把找到的图书，从集合里面删除
 				.ifPresent(list.getBooks()::remove);
 
-//		Book book = null;
-//		// 循环所有的图书
-//		for (Book b : list.getBooks()) {
-//			// 过滤需要的图书
-//			if (b.getId().equals(id)) {
-//				// 找到需要的图书以后，跳出循环
-//				book = b;
-//				break;
-//			}
-//		}
-//		// 从集合里面删除图书
-//		list.getBooks().remove(book);
 	}
+
 }

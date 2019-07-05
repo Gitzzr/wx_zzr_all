@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#box {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+header {
+	background: #333;
+	flex: 0 0 auto;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #F7F7F7;
+	margin-bottom: 0.25rem;
+}
+
+div.search {
+	padding:10px 0;
+}
+form {
+	position:relative;
+	width:300px;
+	margin:0 auto;
+}
+input,button {
+	border:none;
+	outline:none;
+}
+input {
+	width:100%;
+	height:42px;
+	padding-left:13px;
+}
+button {
+	height:42px;
+	width:42px;
+	cursor:pointer;
+	position:absolute;
+}
+.bar7 form {
+	height:42px;
+}
+.bar7 input {
+	width:250px;
+	border-radius:42px;
+	border:2px solid #324B4E;
+	background:#F9F0DA;
+	transition:.3s linear;
+	float:right;
+}
+.bar7 input:focus {
+	width:300px;
+}
+.bar7 button {
+	background:none;
+	right:20px;
+}
+.bar7 button:before {
+	/*content:"Search";*/
+	font-family:FontAwesome;
+	color:#324b4e;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.book-box {
+	width: 100%;
+	height: auto;
+}
+
+.book {
+	width: 100%;
+	height: 15.625rem;
+}
+
+.book .book-img {
+	width: 30%;
+	height: 12.5rem;
+	text-align: center;
+	float: left;
+}
+
+.book .book-img img {
+	width: 200px;
+}
+
+.book .book-right {
+	width: 60%;
+	height: 12.5rem;
+	float: left;
+	padding-top: 2rem;
+}
+
+.book .book-right .book-text {
+	height: 3.1rem;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.book .book-right .book-text .col-10 {
+	font-size: 1.25rem;
+	width: 100%;
+}
+
+.book .book-right a {
+	text-decoration: none;
+}
+
+.book .book-right .col-1 {
+	margin-top: 3rem;
+	width: 6rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	background-color: #333333;
+	color: #F7F7F7;
+}
+
+.book .book-right .col-1:hover {
+	background-color: #1f8dd6;
+}
+
+.page {
+	width: 10rem;
+	height: 2rem;
+	margin: 0 auto;
+}
+.page a {
+	text-decoration: none;
+	color: #F7F7F7;
+}
+
+.page a div {
+	margin-left: 0.625rem;
+	float: left;
+	width: 4rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	background-color: #333333;
+}
+
+.page a div:hover {
+	background-color: #1f8dd6;
+}
+
+
+footer {
+	margin-top: 1.25rem;
+	background: #333;
+	flex: 0 0 auto;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #F7F7F7;
+}

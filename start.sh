@@ -13,3 +13,6 @@ mvn spring-boot:start
 
 cd ../self_menu
 mvn spring-boot:start
+
+cd ../library
+mvn spring-boot:start
