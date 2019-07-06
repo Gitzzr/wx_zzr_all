@@ -48,7 +48,7 @@ public class SubscribeEventMessageProcessor implements EventMessageProcessor {
 			this.userRepository.save(wxUser);
 
 			// 通过客服接口，发生一条信息给用户
-			weixinProxy.sendText(account, openId, "欢迎关注我的公众号，点击菜单“图书馆”可进入图书馆借书。");
+			weixinProxy.sendText(account, openId, "欢迎关注我的公众号，点击菜单图书馆可进入图书馆借书");
 		}
 	}
 }
